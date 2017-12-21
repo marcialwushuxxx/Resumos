@@ -1,4 +1,4 @@
-# Resumos para a Feira Tecnologica e Semana Acadêmica da FGF
+# Resumos para a Feira Tecnologica da FGF
 
 ![](http://www.fgf.edu.br/wp-content/themes/fgf-28-05-2013_RESPONSIVO/images/fgf-faculdade-integrada-da-grande-fortaleza.png) 
 
