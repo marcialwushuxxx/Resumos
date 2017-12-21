@@ -1,0 +1,479 @@
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><style type="text/css"> body, table { font-size: 14px } /* Table Style - This is what you want ------------------------------------------------------------------ */ table a:link, table a:visited { 	color: #2D4FD6; 	text-decoration:none; } table a:active, table a:hover { 	color: #bd5a35; 	text-decoration:underline; }  /* para descatar os candidatos similares*/  table tr.sim_1, table tr.sim_1 a { color: #C74444; }    table { 	font-family:Arial, Helvetica, sans-serif; 	color:#333; 	/* font-size:12px; 	text-shadow: 1px 1px 0px #fff;  */ 	background:#eaebec; 	border:#ccc 1px solid;     /* 	-moz-border-radius:3px; 	-webkit-border-radius:3px; 	border-radius:3px;  	-moz-box-shadow: 0 1px 2px #d1d1d1; 	-webkit-box-shadow: 0 1px 2px #d1d1d1; 	box-shadow: 0 1px 2px #d1d1d1;         */     width: 100%; } table th { 	padding:5px 5px 5px 5px; 	border-top:1px solid #fafafa; 	border-bottom:1px solid #e0e0e0;  	background: #ededed; 	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb)); 	background: -moz-linear-gradient(top,  #ededed,  #ebebeb); } table th:first-child{ 	text-align: left; 	padding-left:20px; } table tr:first-child th:first-child{ 	-moz-border-radius-topleft:3px; 	-webkit-border-top-left-radius:3px; 	border-top-left-radius:3px; } table tr:first-child th:last-child{ 	-moz-border-radius-topright:3px; 	-webkit-border-top-right-radius:3px; 	border-top-right-radius:3px; } table tr{ 	text-align: center; 	padding-left:20px; } table tr td:first-child{ 	text-align: left; 	padding-left:20px; 	border-left: 0; } table tr td { 	padding:5px 5px 5px 5px; 	/* border-top: 1px solid #ffffff; 	border-bottom:1px solid #e0e0e0; 	border-left: 1px solid #e0e0e0;     */  	background: #fafafa; 	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa)); 	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa); } table tr.even td{ 	background: #f6f6f6; 	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f3f3f3)); 	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6); } table tr:last-child td{  border-bottom:0; } table tr:last-child td:first-child{ 	-moz-border-radius-bottomleft:3px; 	-webkit-border-bottom-left-radius:3px; 	border-bottom-left-radius:3px; } table tr:last-child td:last-child{ 	-moz-border-radius-bottomright:3px; 	-webkit-border-bottom-right-radius:3px; 	border-bottom-right-radius:3px; } table tr:hover td{ 	background: #f2f2f2; 	background: -webkit-gradient(linear, left top, left bottom, from(#E4EDFF), to(#E4EDFF)); 	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0); }  .common_chunk{color:#f00;text-decoration: none;}.divisor-texto{display: none;} #cand_listAll{display: block;} span.f1 {   color:#ff0000; } </style><script>function toggle( idCandidate ){ 	var candidateToShow = 'cand_'+idCandidate;	var divs = document.getElementsByClassName('divisor');	for (i = 0; i < divs.length; i++)	{		divs[i].style.display = 'none';	}	if( candidateToShow && document.getElementById(candidateToShow) ){		document.getElementById(candidateToShow).style.display = 'block';			}		if( $('.select-cand') ){	  $('.select-cand').removeClass('active');	}	if( $('#li-cand-'+idCandidate) ){	  $('#li-cand-'+idCandidate).addClass('active');	}		return false;	}</script><script>window.onload = function() {toggle("listAll");};</script>
+
+<div id'divisor-list' class='col-xs-6 col-sm-6 col-md-4 col-lg-3'>
+<ul class='nav nav-pills nav-stacked'>
+<li role='presentation' id='li-cand-listAll' class='select-cand'><a href='#' onclick='return toggle("listAll");'>Documentos candidatos </a></li>
+<li role='presentation' id='li-cand-_file5' class='select-cand'><a href='#' onclick='return toggle("_file5");'>faculty.uml.edu/jbyr... [0,5%]</a></li>
+<li role='presentation' id='li-cand-_file7' class='select-cand'><a href='#' onclick='return toggle("_file7");'>worldcat.org/title/c... [0,39%]</a></li>
+<li role='presentation' id='li-cand-_file6' class='select-cand'><a href='#' onclick='return toggle("_file6");'>pt.wikipedia.org/wik... [0,38%]</a></li>
+<li role='presentation' id='li-cand-_file10' class='select-cand'><a href='#' onclick='return toggle("_file10");'>fgf.edu.br/acesso-re... [0,33%]</a></li>
+<li role='presentation' id='li-cand-_file1' class='select-cand'><a href='#' onclick='return toggle("_file1");'>fgf.edu.br/acesso-re... [0,32%]</a></li>
+<li role='presentation' id='li-cand-_file8' class='select-cand'><a href='#' onclick='return toggle("_file8");'>fgf.edu.br/corpo-doc... [0,27%]</a></li>
+<li role='presentation' id='li-cand-_file2' class='select-cand'><a href='#' onclick='return toggle("_file2");'>fgf.edu.br/ [0,23%]</a></li>
+<li role='presentation' id='li-cand-_file4' class='select-cand'><a href='#' onclick='return toggle("_file4");'>mpf.mp.br/rs/sala-de... [0,2%]</a></li>
+<li role='presentation' id='li-cand-_file9' class='select-cand'><a href='#' onclick='return toggle("_file9");'>metodista.br/congres... [0,01%]</a></li>
+</ul>
+</div>
+
+<div id='content-candidates' class='col-xs-6 col-sm-6 col-md-8 col-lg-9' >
+<div class='divisor divisor-texto' id="cand_listAll"><span><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)</span><table cellspacing='0' id='table-indice-report'><thead><tr class='table-ui-widget-header'><th>Arquivo encontrado</th><th width='10%'></th><th width='10%'>Total de termos</th><th width='10%'>Termos comuns</th><th width='10%'>Similaridade (%)</th><th width='13%'></th></tr></thead><tbody><tr class=' even'>
+<td><a href='http://faculty.uml.edu/jbyrne/44.203/documents/Exam1reviewforfall2016technologyandcjclass.docx' title='http://faculty.uml.edu/jbyrne/44.203/documents/Exam1reviewforfall2016technologyandcjclass.docx' target='_blank'>faculty.uml.edu/jbyr...</a></td>
+<td><a href='#' onclick='return toggle("_file5");'>Visualizar</a></td>
+<td>761</td>
+<td>6</td>
+<td>0,5</td>
+<td></td>
+</tr><tr class=''>
+<td><a href='http://www.worldcat.org/title/criminal-justice-technology-in-the-21st-century/oclc/965781583' title='http://www.worldcat.org/title/criminal-justice-technology-in-the-21st-century/oclc/965781583' target='_blank'>worldcat.org/title/c...</a></td>
+<td><a href='#' onclick='return toggle("_file7");'>Visualizar</a></td>
+<td>1105</td>
+<td>6</td>
+<td>0,39</td>
+<td></td>
+</tr><tr class=' even'>
+<td><a href='https://pt.wikipedia.org/wiki/Deep_web' title='https://pt.wikipedia.org/wiki/Deep_web' target='_blank'>pt.wikipedia.org/wik...</a></td>
+<td><a href='#' onclick='return toggle("_file6");'>Visualizar</a></td>
+<td>1138</td>
+<td>6</td>
+<td>0,38</td>
+<td></td>
+</tr><tr class=''>
+<td><a href='http://www.fgf.edu.br/acesso-restrito/professor-online-ead/' title='http://www.fgf.edu.br/acesso-restrito/professor-online-ead/' target='_blank'>fgf.edu.br/acesso-re...</a></td>
+<td><a href='#' onclick='return toggle("_file10");'>Visualizar</a></td>
+<td>165</td>
+<td>2</td>
+<td>0,33</td>
+<td></td>
+</tr><tr class=' even'>
+<td><a href='http://www.fgf.edu.br/acesso-restrito/aluno-online/' title='http://www.fgf.edu.br/acesso-restrito/aluno-online/' target='_blank'>fgf.edu.br/acesso-re...</a></td>
+<td><a href='#' onclick='return toggle("_file1");'>Visualizar</a></td>
+<td>178</td>
+<td>2</td>
+<td>0,32</td>
+<td></td>
+</tr><tr class=''>
+<td><a href='http://www.fgf.edu.br/corpo-docente-gerencia-de-marketing/' title='http://www.fgf.edu.br/corpo-docente-gerencia-de-marketing/' target='_blank'>fgf.edu.br/corpo-doc...</a></td>
+<td><a href='#' onclick='return toggle("_file8");'>Visualizar</a></td>
+<td>294</td>
+<td>2</td>
+<td>0,27</td>
+<td></td>
+</tr><tr class=' even'>
+<td><a href='http://www.fgf.edu.br/' title='http://www.fgf.edu.br/' target='_blank'>fgf.edu.br/</a></td>
+<td><a href='#' onclick='return toggle("_file2");'>Visualizar</a></td>
+<td>429</td>
+<td>2</td>
+<td>0,23</td>
+<td></td>
+</tr><tr class=''>
+<td><a href='http://www.mpf.mp.br/rs/sala-de-imprensa/docs/outros-documentos/operacao-darknet/at_download/file' title='http://www.mpf.mp.br/rs/sala-de-imprensa/docs/outros-documentos/operacao-darknet/at_download/file' target='_blank'>mpf.mp.br/rs/sala-de...</a></td>
+<td><a href='#' onclick='return toggle("_file4");'>Visualizar</a></td>
+<td>1551</td>
+<td>4</td>
+<td>0,2</td>
+<td></td>
+</tr><tr class=' even'>
+<td><a href='https://www.metodista.br/congressos-cientificos/index.php/CM2015/RIIR/paper/view/7156' title='https://www.metodista.br/congressos-cientificos/index.php/CM2015/RIIR/paper/view/7156' target='_blank'>metodista.br/congres...</a></td>
+<td><a href='#' onclick='return toggle("_file9");'>Visualizar</a></td>
+<td>5477</td>
+<td>1</td>
+<td>0,01</td>
+<td></td>
+</tr><tr class=' even'>
+<td><a href='https://www.amazon.com/Criminal-Justice-Technology-21st-Century/dp/039809151X' title='https://www.amazon.com/Criminal-Justice-Technology-21st-Century/dp/039809151X' target='_blank'>amazon.com/Criminal-...</a></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td><a title='' href='#'>Conversão falhou</a></td>
+</tr></tbody></table></div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file1"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.fgf.edu.br/acesso-restrito/aluno-online/' target='_blank'>http://www.fgf.edu.br/acesso-restrito/aluno-online/</a> (178 termos)<br><br>Termos comuns: 2<br>Similaridade: 0,32%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.fgf.edu.br/acesso-restrito/aluno-online/</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+4Mestre Doutorando- Faculdade <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >da Grande Fortaleza</span>. e-mail: rafaelteixeira@<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file2"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.fgf.edu.br/' target='_blank'>http://www.fgf.edu.br/</a> (429 termos)<br><br>Termos comuns: 2<br>Similaridade: 0,23%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.fgf.edu.br/</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+4Mestre Doutorando- Faculdade <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >da Grande Fortaleza</span>. e-mail: rafaelteixeira@<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file4"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.mpf.mp.br/rs/sala-de-imprensa/docs/outros-documentos/operacao-darknet/at_download/file' target='_blank'>http://www.mpf.mp.br/rs/sala-de-imprensa/docs/outros-documentos/operacao-darknet/at_download/file</a> (1551 termos)<br><br>Termos comuns: 4<br>Similaridade: 0,2%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.mpf.mp.br/rs/sala-de-imprensa/docs/outros-documentos/operacao-darknet/at_download/file</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE <span class='f1 c_4' id='c_4_1' href='#c_4_2' cs_f='.c_4' >A DEEP<br>
+WEB</span>, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >Rede TOR<br>
+(The Onion</span> Routing), mas <span class='f1 c_3' id='c_3_1' href='#c_3_2' cs_f='.c_3' >a rede TOR</span> e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas <span class='f1 c_3' id='c_3_1' href='#c_3_2' cs_f='.c_3' >a Rede TOR</span>, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.fgf.edu.br<br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.fgf.edu.br<br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.fgf.edu.br<br>
+4Mestre Doutorando- Faculdade da Grande Fortaleza. e-mail: rafaelteixeira@fgf.edu.br<br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file5"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://faculty.uml.edu/jbyrne/44.203/documents/Exam1reviewforfall2016technologyandcjclass.docx' target='_blank'>http://faculty.uml.edu/jbyrne/44.203/documents/Exam1reviewforfall2016technologyandcjclass.docx</a> (761 termos)<br><br>Termos comuns: 6<br>Similaridade: 0,5%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://faculty.uml.edu/jbyrne/44.203/documents/Exam1reviewforfall2016technologyandcjclass.docx</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. <span class='f1 c_6' id='c_6_1' href='#c_6_2' cs_f='.c_6' >Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity</span><br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.fgf.edu.br<br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.fgf.edu.br<br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.fgf.edu.br<br>
+4Mestre Doutorando- Faculdade da Grande Fortaleza. e-mail: rafaelteixeira@fgf.edu.br<br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file6"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='https://pt.wikipedia.org/wiki/Deep_web' target='_blank'>https://pt.wikipedia.org/wiki/Deep_web</a> (1138 termos)<br><br>Termos comuns: 6<br>Similaridade: 0,38%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>https://pt.wikipedia.org/wiki/Deep_web</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE <span class='f1 c_6' id='c_6_1' href='#c_6_2' cs_f='.c_6' >A DEEP<br>
+WEB</span>, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca <span class='f1 c_4' id='c_4_1' href='#c_4_2' cs_f='.c_4' >da Deep Web e</span> averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato <span class='f1 c_5' id='c_5_1' href='#c_5_2' cs_f='.c_5' >de uma rede</span> anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >The Deep Web: surfacing</span> hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.fgf.edu.br<br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.fgf.edu.br<br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.fgf.edu.br<br>
+4Mestre Doutorando- Faculdade da Grande Fortaleza. e-mail: rafaelteixeira@fgf.edu.br<br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file7"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.worldcat.org/title/criminal-justice-technology-in-the-21st-century/oclc/965781583' target='_blank'>http://www.worldcat.org/title/criminal-justice-technology-in-the-21st-century/oclc/965781583</a> (1105 termos)<br><br>Termos comuns: 6<br>Similaridade: 0,39%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.worldcat.org/title/criminal-justice-technology-in-the-21st-century/oclc/965781583</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. <span class='f1 c_6' id='c_6_1' href='#c_6_2' cs_f='.c_6' >Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity</span><br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.fgf.edu.br<br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.fgf.edu.br<br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.fgf.edu.br<br>
+4Mestre Doutorando- Faculdade da Grande Fortaleza. e-mail: rafaelteixeira@fgf.edu.br<br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file8"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.fgf.edu.br/corpo-docente-gerencia-de-marketing/' target='_blank'>http://www.fgf.edu.br/corpo-docente-gerencia-de-marketing/</a> (294 termos)<br><br>Termos comuns: 2<br>Similaridade: 0,27%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.fgf.edu.br/corpo-docente-gerencia-de-marketing/</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+4Mestre Doutorando- Faculdade <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >da Grande Fortaleza</span>. e-mail: rafaelteixeira@<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file9"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='https://www.metodista.br/congressos-cientificos/index.php/CM2015/RIIR/paper/view/7156' target='_blank'>https://www.metodista.br/congressos-cientificos/index.php/CM2015/RIIR/paper/view/7156</a> (5477 termos)<br><br>Termos comuns: 1<br>Similaridade: 0,01%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>https://www.metodista.br/congressos-cientificos/index.php/CM2015/RIIR/paper/view/7156</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.<span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >Estudo de<br>
+caso</span>( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.fgf.edu.br<br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.fgf.edu.br<br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.fgf.edu.br<br>
+4Mestre Doutorando- Faculdade da Grande Fortaleza. e-mail: rafaelteixeira@fgf.edu.br<br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+<div class='divisor divisor-texto' id="cand__file10"><hr class='text-separator'><br>Arquivo de entrada: <a href='#'>RESUMO_SEGURAN_A.pdf</a> (438 termos)<br>Arquivo encontrado: <a href='http://www.fgf.edu.br/acesso-restrito/professor-online-ead/' target='_blank'>http://www.fgf.edu.br/acesso-restrito/professor-online-ead/</a> (165 termos)<br><br>Termos comuns: 2<br>Similaridade: 0,33%<br><br><div class='textInfo'>O texto abaixo é o conteúdo do documento <br>&nbsp;"<b>RESUMO_SEGURAN_A.pdf</b>". <br>Os termos em vermelho foram encontrados no documento <br>&nbsp;"<b>http://www.fgf.edu.br/acesso-restrito/professor-online-ead/</b>".<br><hr class='text-separator'></div>  II Mostra Cient´?fica de Tecnologia - FGF Fortaleza - Ce 02, 03 e 04 de Marc¸o de 2017<br>
+TIPO DE RESUMO: 1. Trabalho original( ), 2. Relato de experieˆncia( ), 3.Estudo de<br>
+caso( ), 4. Pesquisa bibliome´trica(X), 5. Pesquisa bibliogra´fica ( ), 6. Reflexa˜o cr´?tica( ), 7.<br>
+Relato´rio te´cnico ( ), 8. Trabalho de conclusa˜o de curso( ), 9. Nota pre´via de monografia( ),<br>
+10. Relato´rio final de monografia( ).<br>
+ASSINALE O TIPO DE APRESENTAC¸A˜O: 1. ORAL(X) 2. POSTER( ).<br>
+UM ESTUDO BIBLIOME´TRICO SOBRE A DEEP<br>
+WEB, DARKNET E SUAS REDES ALTERNATIVAS<br>
+Cleilson de Sousa Pereira 1<br>
+Thyago Denilson Barbosa da Silva 2<br>
+Madson Dantas Lima 3<br>
+Rafael Teixeira de Araujo 4<br>
+INTRODUC¸A˜O: Deep Web, Darknet e Invisible Web sa˜o alguns termos usados nos ultimos<br>
+anos. A maioria dos artigos jornalisticos mencionam o termo darknet e deep web associado<br>
+a conteudo criminoso e lendas urbanas da internet. A rede mais mencionada e´ Rede TOR<br>
+(The Onion Routing), mas a rede TOR e´ apenas um percentual da chamada Darknet(Deep<br>
+Web). Redes alternativas e anoˆnimas iguais ao Projeto TOR, ou similares, esta˜o presente na<br>
+internet, e as vezes sa˜o esquecidas ao se falar se Deep Web(Darknet). OBJETIVO:Analisar<br>
+o conteudo produzido academicamente acerca da Deep Web e averiguar trabalhos sobre a<br>
+chamada Darknet e quais Redes Alternativas sa˜o abordadas.Gerando um levantamento es-<br>
+tatisco do conteudo especificado. METODOLOGIA: Pesquisa Bibliome´trica, realizando<br>
+um levantamento quantitativo da produc¸a˜o cientifica. Verificado os periodicos Capes, Sci-<br>
+elo, Spell, Google Acadeˆmico, Academic Microsoft, Springer Link, ACM Digital Library e<br>
+ScienceDirect. Modelagem dos dados com as ferramentas Tableau Public e R Studio. RE-<br>
+SULTADOS E DISCUSSA˜O: Ecnotrado um grande volume de publicac¸o˜es no periodico<br>
+do Google, nos demais, resultados alternando entre 900 a 0. Ao expeciifcar a palavra-chave<br>
+com um nome exato de uma rede anoˆnima de conexa˜o a internet,encontra-se valores de per-<br>
+centual de publicac¸a˜o me´dio para as principais redes de conhecimentos geral como TOR,<br>
+Freenet e I2P, para a demais redes pouco conhecidas resultados minimos. CONCLUSA˜O:<br>
+Grande parte dos resultados voltado a Darknet, e´ feita menc¸a˜o apenas a Rede TOR, as de-<br>
+mais redes que compo˜em essa frac¸a˜o de conteudo na˜o indexado na internet, e´ encontrada<br>
+referindo-se ao nome exato da Rede, ou em alguns casos na˜o apresenta um retorno. Na˜o<br>
+encontrado em periodicos uma catalogac¸a˜o dessas Redes Alternativas. REFEREˆNCIAS<br>
+BIBLIOGRA´FICAS (MAX. TREˆS): BERGMAN, M. The Deep Web: surfacing hid-<br>
+den value. BYRNE, J. KIMBALL, K. Inside the Darknet: Techno-Crime And Criminal<br>
+Opportunity<br>
+1Graduando em Sistemas para Internet - FGF. e-mail: cleilsonpereira@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+2Graduando em Sistemas para Internet - FGF. e-mail: aluno@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+3Graduando em Cieˆncia da Computac¸a˜o - FGF. e-mail: madson109@aluno.<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+4Mestre Doutorando- Faculdade <span class='f1 c_1' id='c_1_1' href='#c_1_2' cs_f='.c_1' >da Grande Fortaleza</span>. e-mail: rafaelteixeira@<span class='f1 c_2' id='c_2_1' href='#c_2_2' cs_f='.c_2' >fgf.edu.br</span><br>
+X Feira Tecnolo´gica - FGF Fortaleza - Ceara´ Pa´gina</div>
+<!-- DIVISOR_DIV_CANDIDATE -->
+
+</div><script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK" crossorigin="anonymous">    <script type="text/javascript" src="http://scholar.copyspider.net/lib/tablesorter-master/jquery.tablesorter.js"></script>	<link rel="stylesheet" href="http://scholar.copyspider.net/lib/tablesorter-master/themes/blue/style.css" type="text/css" media="print, projection, screen">    <script type="text/javascript">	$(function() {		$("#table-indice-report")			.tablesorter({widthFixed: true, widgets: ["zebra"]})			/* .tablesorterPager({container: $("#pager")}); */	});	</script>
