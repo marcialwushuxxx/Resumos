@@ -50,4 +50,32 @@
 - **Analise**: [Report CopySpider]()
 - **Ano**: 2017
 
+---
 
+- **Titulo**: Um Estudo de Benchmark das Tecnologias Web implementadas nos Portais Acadêmicos das Principais Faculdades e Univerdades de Fortaleza.
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**:
+- **Apresentação**:
+- **Slide**:
+- **Analise**:
+- **Ano**: 2018
+
+---
+
+- **Titulo**: Um Estudo Analitico das Competições na Área de Tecnologia como Incentivo para Formação Profissional
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**:
+- **Apresentação**:
+- **Slide**:
+- **Analise**:
+- **Ano**: 2018
+
+---
+
+- **Titulo**: Uma Verificação Sistemática do Uso e Adoção do Blockchain e quais Outras Alternativas Similares nos são Apresentadas 
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**:
+- **Apresentação**:
+- **Slide**:
+- **Analise**:
+- **Ano**: 2018
