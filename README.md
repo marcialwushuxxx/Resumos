@@ -79,3 +79,14 @@
 - **Slide**:
 - **Analise**:
 - **Ano**: 2018
+
+---
+
+- **Titulo**: Uma Analise Exploratoria do Uso da WebVR na Estrutura da Internet Futura
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**:
+- **Apresentação**:
+- **Slide**:
+- **Analise**:
+- **Ano**: 2018
+
