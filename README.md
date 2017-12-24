@@ -46,7 +46,7 @@
 - **FGF**: Faculdade Integrada da Grande Fortaleza
 - **Descrição**: Pesquisa bibliométrica sobre o processo de automação industrial com sitemas embarcados, delimitados entre os anos de 2000 a 2017 para quantificar a produção cientifica sobre o tema. Apresentação na Feira Tecnologica, contrução de resumo e apresentação em slide.
 - **Apresetação**: [Resumo]()
-- **Slide**: [Link]()
+- **Slide**: [Link](https://www.slideshare.net/CleilsonPereira/sistemas-embarcados-na-automao-industrial)
 - **Analise**: [Report CopySpider]()
 - **Ano**: 2017
 
