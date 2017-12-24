@@ -4,6 +4,16 @@
 
 ## IX Feira Tecnologica FGF
 
+- **Titulo**: Design da Interface do Usuário: Uma Análise Bibliométrica da Evolução Tecnológica
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**: Um estudo bibliométrico sobre as diversas formas de IU desenvolvidas, para quatificar a produção cientifica acerca do tema proposto e apresentar uma linha do tempo de tendências tecnologicas.
+- **Apresentação**: 
+- **Slide**:[Link](https://www.slideshare.net/CleilsonPereira/design-da-interface-do-usurio)
+- **Analise**:
+- **Ano**: 2016
+
+---
+
 - **Titulo**: Sistemas de Banco de Dados para internet das Coisas
 - **FGF**: Faculdade Integrada da Grande Fortaleza
 - **Descrição**: Analise bibliométrica sobre os Sistemas Gerenciadores de Banco de Dados para a Internet das Coisas. Apresentação na Feira Técnologica, construção de resumo e apresetação em slide.
@@ -90,3 +100,11 @@
 - **Analise**:
 - **Ano**: 2018
 
+---
+- **Titulo**: Um Estudo de Caso do Uso de Biohacking em Aplicações de Monitaramento de Saúde em Sistemas de Telemedicina
+- **FGF**: Faculdade Integrada da Grande Fortaleza
+- **Descrição**:
+- **Apresentação**:
+- **Slide**:
+- **Analise**:
+- **Ano**: 2018
