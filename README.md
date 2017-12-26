@@ -35,7 +35,7 @@
 
 - **Titulo**: Uma análise bibliométrica sobre a Gerência de Projetos na área da Saúde Pública
 - **FGF**: Faculdade Integrada da Grande Fortaleza
-- **Descrição**: Um estudo aplicando a metodologia de pesquisa bibliométrica sobre a aplicação da Gerência de Projetos na Área da Saúde Pública como ferramenta de auxilio na gestão de qualidade de serviço. Apersentação na Feira Tecnologica, contrução de resumo e apresentação em slide.
+- **Descrição**: Um estudo aplicando a metodologia de pesquisa bibliométrica sobre a aplicação da Gerência de Projetos na Área da Saúde Pública como ferramenta de auxilio na gestão de qualidade de serviço. Apersentação na Feira Tecnologica, construção de resumo e apresentação em slide.
 - **Apresetação**: [Resumo]()
 - **Slide**: [Link]()
 - **Analise**: [Report CopySpider]()
@@ -44,7 +44,7 @@
 
 - **Titulo**: Sistemas Embarcados na Automação Industrial
 - **FGF**: Faculdade Integrada da Grande Fortaleza
-- **Descrição**: Pesquisa bibliométrica sobre o processo de automação industrial com sitemas embarcados, delimitados entre os anos de 2000 a 2017 para quantificar a produção cientifica sobre o tema. Apresentação na Feira Tecnologica, contrução de resumo e apresentação em slide.
+- **Descrição**: Pesquisa bibliométrica sobre o processo de automação industrial com sitemas embarcados, delimitados entre os anos de 2000 a 2017 para quantificar a produção cientifica sobre o tema. Apresentação na Feira Tecnologica, construção de resumo e apresentação em slide.
 - **Apresetação**: [Resumo]()
 - **Slide**: [Link](https://www.slideshare.net/CleilsonPereira/sistemas-embarcados-na-automao-industrial)
 - **Analise**: [Report CopySpider]()
@@ -54,7 +54,7 @@
 
 - **Titulo**: Levantamento de Informações sobre Agendamento Online para Sistemas dos Postos de Saúde em Fortaleza e Região Metropolitana
 - **FGF**: Faculdade Integrada da Grande Fortaleza
-- **Descrição**: Levantamento de dados sobre a utilização de sistemas de agendamento online no serviço de atendimento a saúde primária em Fortaleza e região metropolitana, com intuito de prototipar uma solução viavel na estrutura da rede pública de saúde. Apresentação na Feira Tecnlogica, contrução de resumo e apresentação em slide.
+- **Descrição**: Levantamento de dados sobre a utilização de sistemas de agendamento online no serviço de atendimento a saúde primária em Fortaleza e região metropolitana, com intuito de prototipar uma solução viavel na estrutura da rede pública de saúde. Apresentação na Feira Tecnlogica, construção de resumo e apresentação em slide.
 - **Apresetação**: [Resumo]()
 - **Slide**: [Link]()
 - **Analise**: [Report CopySpider]()
@@ -92,7 +92,7 @@
 
 ---
 
-- **Titulo**: Uma Analise Exploratoria do Uso da WebVR na Estrutura da Internet Futura
+- **Titulo**: Uma Analise Exploratoria do Uso da WebVR na Estrutura da Internet Futura e Suas Aplicações Diversas
 - **FGF**: Faculdade Integrada da Grande Fortaleza
 - **Descrição**:
 - **Apresentação**:
@@ -101,7 +101,7 @@
 - **Ano**: 2018
 
 ---
-- **Titulo**: Um Estudo de Caso do Uso de Biohacking em Aplicações de Monitaramento de Saúde em Sistemas de Telemedicina
+- **Titulo**: Um Estudo de Caso do Uso de Biohacking em Aplicações de Monitoramento de Saúde em Sistemas de Telemedicina
 - **FGF**: Faculdade Integrada da Grande Fortaleza
 - **Descrição**:
 - **Apresentação**:
