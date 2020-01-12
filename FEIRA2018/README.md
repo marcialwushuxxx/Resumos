@@ -48,14 +48,14 @@
 - Uma visão geral sobre coordenadas homogêneas aplicadas na computação gráfica
 - Uma visão geral sobre processamentos de imagens na indústria, computação e engenharia
 
-Análise de segurança em aplicativos
-ArtBay
-O auxílio dos jogos eletrônicos no âmbito educacional
-Comunicação Ubíqua
-Weka
-Banco de Dados para dispositivos Móveis
-Nota Fácil: Aplicativo móvel para gerenciamento de notas acadêmicas
-Jogos Digitais no âmbito educacional
-Análise de Jogos para Ensino
-Tecnologias mobile para inclusão de deficientes
+- Análise de segurança em aplicativos
+- ArtBay
+- O auxílio dos jogos eletrônicos no âmbito educacional
+- Comunicação Ubíqua
+- Weka
+- Banco de Dados para dispositivos Móveis
+- Nota Fácil: Aplicativo móvel para gerenciamento de notas acadêmicas
+- Jogos Digitais no âmbito educacional
+- Análise de Jogos para Ensino
+- Tecnologias mobile para inclusão de deficientes
 
